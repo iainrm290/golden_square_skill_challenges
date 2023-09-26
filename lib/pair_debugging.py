@@ -15,6 +15,9 @@ def encode(text, key):
     return "".join(ciphertext_chars)
 
 
+# iusbfnivniuw
+
+
 def decode(encrypted, key):
     print(f"!!!ENCRYPTION  {encrypted}")
     print(f"!!!KEY  {key}")
@@ -57,3 +60,4 @@ print(f"""
 Expected: theswiftfoxjumpedoverthelazydog
   Actual: {decode('EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL', 'secretkey')}
 """)
+# iubwiruybviuwbsuiviuw   wfiuhriuh
