@@ -8,12 +8,13 @@ class DiaryEntry:
         #   Sets the title and contents properties
         self.title = title
         self.contents = contents
-        
+        self.entry = (title, contents)
 
     def count_words(self):
         # Returns:
         #   An integer representing the number of words in the contents
-        pass
+        return len(self.contents.split())
+        
 
     def reading_time(self, wpm):
         # Parameters:

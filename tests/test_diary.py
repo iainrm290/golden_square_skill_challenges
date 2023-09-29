@@ -19,8 +19,10 @@ def test_is_empty_list():
 def test_add_updates_entries():
     diary = Diary()
     diary_entry = DiaryEntry("Monday", "Meetings")
-    diary.add(diary_entry)
+    diary.add(diary_entry.entry)
+    diary_entry = DiaryEntry("Tuesday", "Appointments")
+    diary.add(diary_entry.entry)
     result = diary.entries
-    assert result == ("Monday", "Meetings")
+    assert result == [("Monday", "Meetings"), ("Tuesday", "Appointments")]
 
 
